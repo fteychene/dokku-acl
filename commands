@@ -20,13 +20,6 @@ check_app () {
     exit;
   fi
 
-  if [ -n "${NAME:-}" ];
-  then
-    echo "You can only modify ACL using local dokku command on target host" >&2
-    echo 3;
-    exit;
-  fi
-
   echo 0
 }
 
